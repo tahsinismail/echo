@@ -10,11 +10,8 @@ getQuotes() async {
   var response =
       await http.get(url, headers: {"Content-Type": "application/json"});
 
-  print(response);
-
   if (response.statusCode == 200) {
     quotesResponse = convert.jsonDecode(response.body);
-    print(quotesResponse.toString());
   } else {
     print("Quotes Not Fetched From The Rest API");
   }

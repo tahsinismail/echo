@@ -19,10 +19,8 @@ class QuotesModel extends Model {
 
   Future setQuotes() async {
     dataFromResponse = await getQuotes();
-    print(dataFromResponse.toString());
 
     if (dataFromResponse != null) {
-      print(dataFromResponse.toString());
       List<Quotes> fetchedQuotes = [];
       dataFromResponse.forEach((q) {
         fetchedQuotes.add(
