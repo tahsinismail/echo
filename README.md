@@ -4,12 +4,20 @@ A Flutter project based on [type.fit Quotes API](https://type.fit/api/quotes).
 
 # Screenshots
 
-macOS:
+Mobile(iOS):
 
-![echo_macOS](https://i.ibb.co/M1YRZk9/echo-mac-OS.png)
+![echo_mobile](https://i.ibb.co/L8rSn2C/echo-mobile.png)
 
 
 
-Web:
 
-![echo_web](https://i.ibb.co/gzFwYbd/echo-web.png)
+Desktop(macOS):
+
+![echo_macOS](https://i.ibb.co/Bw1Gbgd/echo-desktop.png)
+
+
+
+
+Web(Chrome):
+
+![echo_web](https://i.ibb.co/xJRmL85/echo-web.png)
