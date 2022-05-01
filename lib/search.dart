@@ -1,5 +1,4 @@
 import 'package:echo/model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:share/share.dart';
