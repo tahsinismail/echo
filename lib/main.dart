@@ -45,7 +45,6 @@ class _QuotesState extends State<Quotes> {
             IconButton(
                 icon: Icon(Icons.search),
                 onPressed: () {
-                  print("Search Icon Tapped!");
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Search()));
                 }),

@@ -27,7 +27,6 @@ class _SearchState extends State<Search> {
         model.quotes.where((test) => test.text.contains(search)).toList();
     await Future.delayed(Duration(seconds: 2));
     return List.generate(quotesText.length, (int index) {
-      print(quotesText);
       return Quotes(
         text: model.quotes[index].text,
         author: model.quotes[index].author != null
@@ -45,6 +44,7 @@ class _SearchState extends State<Search> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: SearchBar<Quotes>(
+            minimumChars: 1,
             searchBarPadding: EdgeInsets.all(0),
             emptyWidget: Center(
                 child: Text(
@@ -64,6 +64,7 @@ class _SearchState extends State<Search> {
                   fontSize: 16,
                   fontWeight: FontWeight.w400),
             ),
+            onCancelled: () => Navigator.of(context).pop(),
             hintText: "Search Quotes...",
             onSearch: search,
             onItemFound: (Quotes quotes, int index) {
